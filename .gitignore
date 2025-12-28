@@ -1,1 +1,23 @@
-.DS_store
+# macOS
+.DS_Store
+
+# Environment variables and local env files
+.env
+.env.*
+.env.local
+.envrc
+
+# Python virtual environments
+venv/
+.venv/
+
+# Python tool settings
+.python-version
+
+# Local IDE/editor settings (developer-specific)
+.vscode/
+.idea/
+
+# OS artifacts
+.DS_Store
+
