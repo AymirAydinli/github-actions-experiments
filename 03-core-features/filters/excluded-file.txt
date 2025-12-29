@@ -1,0 +1,9 @@
+This is a generic text file.
+
+You can add any plain text content here, such as:
+- Notes
+- Documentation
+- Configuration details
+- Or any other text-based information
+
+Feel free to modify this file as needed for your project.
