@@ -16,8 +16,14 @@ jobs:
         number: [1, 2, 3]
         letter: [a, b, c, d]
         exclude:
-          - number: 1, 3
-            letter: a, d
+          - number: 1
+            letter: a
+          - number: 3
+            letter: d
+          - number: 1
+            letter: d
+          - number: 3
+            letter: a
     timeout-minutes: 5
 
     steps:
