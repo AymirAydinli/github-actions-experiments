@@ -27,7 +27,7 @@ jobs:
           echo "Cache miss –- generating contents"
           mkdir -p demo-cache
           date > demo-cache/timestamp.txt
-          "testing 1 2 3" >> demo-cache/timestamp.txt
+          echo "testing 1 2 3" >> demo-cache/timestamp.txt
 
       # Save cache only if we generated new content
       - name: Save cache
