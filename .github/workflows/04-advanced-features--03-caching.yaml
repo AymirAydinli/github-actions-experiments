@@ -24,9 +24,10 @@ jobs:
       - name: Populate cache directory
         if: steps.demo-cache.outputs.cache-hit != 'true'
         run: |
-          echo "Cache miss – generating contents"
+          echo "Cache miss –- generating contents"
           mkdir -p demo-cache
           date > demo-cache/timestamp.txt
+          "testing 1 2 3" >> demo-cache/timestamp.txt
 
       # Save cache only if we generated new content
       - name: Save cache
@@ -39,6 +40,7 @@ jobs:
       - name: Verify cache status
         run: |
           echo "cache-hit? -> ${{ steps.demo-cache.outputs.cache-hit }}"
+          echo "Cache contets: ${{ steps.demo-cache.outputs.cache-hit }}"
           cat demo-cache/timestamp.txt
 
   # ──────────────────────────────────────────────
