@@ -14,4 +14,4 @@ tasks:
   hello-world-task:
     cmds:
       - |
-        echo "Hello from a Taskfile task called from a GitHub Action Workflow!"
+        echo "Hello from a Taskfile task called Locally!"
